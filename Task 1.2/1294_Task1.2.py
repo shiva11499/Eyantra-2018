@@ -89,9 +89,6 @@ def color_detect(img,ids):
     approx1 = cv2.approxPolyDP(cnt1,epsilon1,True)
 
 
-
-
-
     with open('1294_Task1.12.csv', 'a') as f:
         writer = csv.writer(f)
     
@@ -102,7 +99,6 @@ def color_detect(img,ids):
     cv2.imshow("ColorImage",img)
     cv2.waitKey(0)
     cv2.destroyAllWindows()
-
 
 if __name__ == "__main__":
     aruco_detect()
